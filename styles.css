@@ -136,6 +136,9 @@ table {
 }
 /* END OF CSS RESET */
 /* GLobal Styles*/
+html {
+    font-family: 'Roboto', sans-serif;
+}
 body {
     margin: 0;
 }
@@ -269,4 +272,5 @@ h1 {
 /* footer styles */
 footer {
     background-color: #2e3191;
+    color: white;
 }

@@ -36,12 +36,50 @@
         </header>
     <main>
         <h1>CardFanatic</h1>
-        <form class="contactForm">
-
+        <form method="post" action="https://wp.zybooks.com/form-viewer.php">
+            <div id="names">
+                <label for="fName">First Name<span class="required">*</span></label>
+                <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
+                <!-- custom input styles from https://moderncss.dev/custom-css-styles-for-form-inputs-and-textareas/ -->
+                <label for="lName">Last Name<span class="required">*</span></label>
+                <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" required>
+            </div>
+            <div id="nums">
+                <fieldset id="radio-grid">
+                    <legend>Contact Method<span class="required">*</span></legend>
+                    <!-- custom radio button styles from https://moderncss.dev/pure-css-custom-styled-radio-buttons/ -->
+                    <label for="prefEmail">
+                        <span class="radio-input">
+                            <input type="radio" name="contactPref" id="prefEmail" required checked>
+                            <span class="radio-control"></span>
+                        </span>
+                        <span class="radio-label">Email</span>
+                    </label>
+                    <label for="prefText">
+                        <span class="radio-input">
+                            <input type="radio" name="contactPref" id="prefText">
+                            <span class="radio-control"></span>
+                        </span>
+                        <span class="radio-label">Text</span>
+                    </label>
+                    <label for="prefPhone">
+                        <span class="radio-input">
+                            <input type="radio" name="contactPref" id="prefPhone">
+                            <span class="radio-control"></span>
+                        </span>
+                        <span class="radio-label">Phone</span>
+                    </label>
+                </fieldset>
+                <label for="email">Email Address<span class="required">*</span></label>
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" required>
+                <label for="phone">Phone Number<span class="required">*</span></label>
+                <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Phone Number" required>
+            </div>
+            <input type="submit" name="mySubmit" id="mySubmit" value="Submit">
         </form>
     </main>
     <footer>
-        <p>Copyright info</p>
+        <p>Copyright &copy; 2024 CardFanatic</p>
     </footer>
 </body>
 <!--loading scripts.js file-->
