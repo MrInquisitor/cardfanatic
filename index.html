@@ -7,8 +7,7 @@
     <meta name="author" content="Seth Choate">
     <title>CardFanatic</title>
     <link rel="stylesheet" href="./styles.css">
-    
-    <!--This is an icon library that will be used to show the hamburger menu buttons-->
+    <!-- Add icon library, this library is for the social media icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -39,57 +38,124 @@
     </header>
     <main>
         <h1>CardFanatic</h1>
-        <section class="slider">
-         
-        </section>
-        <div class="homeCont">
-            <section class="homeBlog">
-                <div class="featBlog">
-                    <h2> Blog Post</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...<a
-                            href="./blog.html">more</a></p>
+        <div class="sliderBack">
+            <section class="slider">
+            <div class='slide'>
+                    <img src="./images/blogposts/Digimon.jpg" alt="picture of Athoria Games Tempe">
+                    <div class="caption"><a href="./blog.html">Blog Post 1</a></div>
+            </div>
+                <div class='slide'>
+                    <img src="./images/blogposts/Athoria-Games-Tempe.webp" alt="picture of Athoria Games Tempe">
+                    <div class="caption">Blog Post 2</div>
                 </div>
-                <div class="featBlog">
-                    <h2> Blog Post</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<a
-                            href="./blog.html">more</a></p>
+                <div class='slide'>
+                    <img src="./images/blogposts/History_Trading_Cards_Pokemon.webp" alt="picture of Athoria Games Tempe">
+                    <div class="caption">Blog Post 3</div>
                 </div>
-                <div class="featBlog">
-                    <h2> Blog Post</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis
-                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a
-                            href="./blog.html">more</a></p>
+                <div class='slide'>
+                    <img src="./images/blogposts/Pokémon_Trading_Card_Game_logo.svg.png" alt="picture of Athoria Games Tempe">
+                    <div class="caption">Blog Post 4</div>
+                </div>
+                <!-- Next and previous buttons, try leaving these as onclick, rarely ever used and they not need extra interactivity-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a> 
                 </div>
             </section>
-            <section class="homeStore">
-                <div class="homeCards">
+         </div>
+         <div class="homeBack">
+            <div class="homeCont">
+                <section class="homeBlog">
+                    <h2>Lastest News</h2>
+                    <div class="featBlog">
+                        <figure>
+                            <img src="./images/blogposts/Athoria-Games-Tempe.webp" alt="Athoria games entrance Mesa, Arizona" id="athoria">
+                        </figure>
+                        <h2> Blog Post</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <a href="./blog.html" class="blogLink"> more...</a></p>
+                    </div>
+                    <div class="featBlog">
+                        <figure>
+                            <img src="./images/blogposts/dragonshield.webp" alt="Athoria games entrance Mesa, Arizona" id="dshield">
+                        </figure>
+                        <h2> Blog Post</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborumLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <a href="./blog.html" class="blogLink"> more...</a></p>
+                    </div>
+                    <div class="featBlog">
+                        <figure>
+                            <img src="./images/blogposts/Pokémon_Trading_Card_Game_logo.svg.png" alt="Athoria games entrance Mesa, Arizona" id="pokemon">
+                        </figure>
+                        <h2> Blog Post</h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis
+                            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                            <a href="./blog.html" class="blogLink"> more...</a></p>
+                    </div>
+                    <a href="./blog.html"><button type="button" class="homepgBtn">Check Out Our Blog!</button></a>
+                </section>
+                <section class="homeStore">
 
-                </div>
-                <div class="homeCards">
-                
-                </div>
-                <div class="homeCards">
-                
-                </div>
-            </section>
-        </div>  
+                    <h2>Featured Cards</h2>
+                        <div class="homeCards">
+                            <img src="./images/magiccards/Klothys.png" alt="Magic the Gathring card Klothys">
+                            <a href="shop.html" target="_blank"></button><h3>Klothys, God of Destiny</h3></a>
+                            <p>Price: $15.03</p>
+                        </div>
+                        <div class="homeCards">
+                            <img src="./images/pokemoncards/growlithe.png" alt="Pokemon card Growlithe">
+                            <a href="shop.html" target="_blank"><h3>Growlithe</h3></a>
+                            <p>Price: $0.25</p>
+                        </div> 
+                        <div class="homeCards">
+                            <img src="./images/yugiohcards/Pot of Greed.png" alt="Yu gi oh card pot of greed">
+                            <a href="shop.html" target="_blank"><h3>Pot of Greed</h3></a>
+                            <p>Price: $23.89</p>
+                        </div>
+                    <a href="./shop.html"><button type="button" class="homepgBtn">Check Out Our Store!</button></a>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Copyright &copy; 2024 CardFanatic</p>
+        <a href="./contact.html" id="contact">Contact Us</a>
+        <div class="socials">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <img src="./images/logos/cardfanatic-logo3.png" alt="text logo for CardFanatic" id="footerLogo">
     </footer>
 </body>
 <!--loading scripts.js file-->

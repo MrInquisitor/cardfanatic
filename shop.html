@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Seth Choate">
     <title>CardFanatic</title>
+    <!-- Add icon library, this library is for the social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles.css">
 </head>
 
@@ -36,48 +38,112 @@
         </header>
     <main>
         <h1>CardFanatic</h1>
+        <div class="sliderBack">
+            <section class="slider">
+                <div class='slide'>
+                    <img src="./images/blogposts/Digimon.jpg" alt="picture of Athoria Games Tempe">
+                    <div class="caption"><a href="./blog.html">Blog Post 1</a></div>
+                </div>
+                <div class='slide'>
+                    <img src="./images/blogposts/Athoria-Games-Tempe.webp" alt="picture of Athoria Games Tempe">
+                    <div class="caption">Blog Post 2</div>
+                </div>
+                <div class='slide'>
+                    <img src="./images/blogposts/History_Trading_Cards_Pokemon.webp" alt="picture of Athoria Games Tempe">
+                    <div class="caption">Blog Post 3</div>
+                </div>
+                <div class='slide'>
+                    <img src="./images/blogposts/Pokémon_Trading_Card_Game_logo.svg.png" alt="picture of Athoria Games Tempe">
+                    <div class="caption">Blog Post 4</div>
+                </div>
+                <!-- Next and previous buttons, try leaving these as onclick, rarely ever used and they not need extra interactivity-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        </section>
+        </div>
         <section class="shop"> 
-            <div class="shopCards">
-            
+            <h2>Pokemon</h2>
+            <div class="cardSection">
+                <div class="shopCards">
+                    <img src="./images/pokemoncards/growlithe.png" alt="Pokemon card Growlithe">
+                    <h3>Growlithe</h3>
+                    <p>Price: $0.25</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/pokemoncards/Charizard.png" alt="Pokemon card Growlithe">
+                    <h3>Charizard</h3>
+                    <p>Price: $8.05</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/pokemoncards/Venasaur.png" alt="Pokemon card Growlithe">
+                    <h3>Venasaur</h3>
+                    <p>Price: $12.45</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/pokemoncards/pikachu.png" alt="Pokemon card Growlithe">
+                    <h3>Pikachu</h3>
+                    <p>Price: $0.05</p>
+                </div>
             </div>
-            <div class="shopCards">
-            
+            <h2>Magic: The Gathering</h2>
+            <div class="cardSection">
+                <div class="shopCards">
+                    <img src="./images/magiccards/Klothys.png" alt="Magic the Gathering card Klothys">
+                    <h3>Klothys, God of Destiny</h3>
+                    <p>Price: $15.03</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/magiccards/Thrasta.webp" alt="Magic the Gathering card Klothys">
+                    <h3>Thrasta, Tempest's Roar</h3>
+                    <p>Price: $2.49</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/magiccards/magic avaricious dragon.png" alt="Magic the Gathering card Klothys">
+                    <h3>Avaricious Dragon</h3>
+                    <p>Price: $15.03</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/magiccards/RoamingThrone.webp" alt="Magic the Gathering card Klothys">
+                    <h3>Roaming Throne</h3>
+                    <p>Price: $31.30</p>
+                </div>
             </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
-            </div>
-            <div class="shopCards">
-            
+            <h2>Yu-Gi-Oh</h2>
+            <div class="cardSection">
+                <div class="shopCards">
+                    <img src="./images/yugiohcards/Pot of Greed.png" alt="Yu gi oh card pot of greed">
+                    <h3>Pot of Greed</h3>
+                    <p>Price: $23.89</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/yugiohcards/SkullGuardian.webp" alt="Yu gi oh card pot of greed">
+                    <h3>Skull Guardian</h3>
+                    <p>Price: $2.36</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/yugiohcards/LightningStorm.webp" alt="Yu gi oh card pot of greed">
+                    <h3>Lightning Storm</h3>
+                    <p>Price: $1.26</p>
+                </div>
+                <div class="shopCards">
+                    <img src="./images/yugiohcards/Blue Eyesa.webp" alt="Yu gi oh card pot of greed">
+                    <h3>Blue Eyes Abyss Dragon</h3>
+                    <p>Price: $23.89</p>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Copyright &copy; 2024 CardFanatic</p>
-    </footer>
+<footer>
+    <p>Copyright &copy; 2024 CardFanatic</p>
+    <a href="./contact.html" id="contact">Contact Us</a>
+    <div class="socials">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>
+    <img src="./images/logos/cardfanatic-logo3.png" alt="text logo for CardFanatic" id="footerLogo">
+</footer>
 </body>
 <!--loading scripts.js file-->
 <script src="scripts.js"></script>
