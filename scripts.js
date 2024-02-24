@@ -1,3 +1,5 @@
+//adding use strict globally
+"use strict";
 // code for hamburger menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navMenu")

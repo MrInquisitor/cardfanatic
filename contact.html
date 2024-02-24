@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <a id="skip" href="#main-content-contact">Skip to Main Content</a>
         <header>
             <nav class="navbar" id="navBar">
                 <a href="./contact.html"><img src="./images/logos/cardfanatic-logo2.png" alt="CardFanatic logo" id="navLogo"></a>
@@ -33,15 +34,15 @@
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </div>  
             </nav>
         </header>
-    <main>
+    <main >
         <h1>CardFanatic</h1>
         <div class="sliderBack">
             <section class="slider">
                 <div class='slide'>
-                    <img src="./images/blogposts/Digimon.jpg" alt="picture of Athoria Games Tempe">
+                    <img src="./images/blogposts/digimon_tcg_clanak.webp" alt="picture of Athoria Games Tempe">
                     <div class="caption"><a href="./blog.html">Blog Post 1</a></div>
                 </div>
                 <div class='slide'>
@@ -62,59 +63,71 @@
         </div>
         </section>
         </div>
-        <form method="post" action="https://wp.zybooks.com/form-viewer.php" id="messageForm">
-            <div id="names">
-                <label for="fName">First Name<span class="required">*</span></label>
-                <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
-                <!-- custom input styles from https://moderncss.dev/custom-css-styles-for-form-inputs-and-textareas/ -->
-                <label for="lName">Last Name<span class="required">*</span></label>
-                <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" required>
-            </div>
-            <div id="nums">
-                <fieldset id="radio-grid">
-                    <legend>Contact Method<span class="required">*</span></legend>
-                    <!-- custom radio button styles from https://moderncss.dev/pure-css-custom-styled-radio-buttons/ -->
-                    <label for="prefEmail">
-                        <span class="radio-input">
-                            <input type="radio" name="contactPref" id="prefEmail" required checked>
-                            <span class="radio-control"></span>
-                        </span>
-                        <span class="radio-label">Email</span>
-                    </label>
-                    <label for="prefText">
-                        <span class="radio-input">
-                            <input type="radio" name="contactPref" id="prefText">
-                            <span class="radio-control"></span>
-                        </span>
-                        <span class="radio-label">Text</span>
-                    </label>
-                    <label for="prefPhone">
-                        <span class="radio-input">
-                            <input type="radio" name="contactPref" id="prefPhone">
-                            <span class="radio-control"></span>
-                        </span>
-                        <span class="radio-label">Phone</span>
-                    </label>
-                </fieldset>
-                <label for="email">Email Address<span class="required">*</span></label>
-                <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" required>
-                <label for="phone">Phone Number<span class="required">*</span></label>
-                <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Phone Number" required>
-            
+        <div id="main-content-contact">
+            <form method="post" action="https://wp.zybooks.com/form-viewer.php" id="messageForm">
+                <div id="names">
+                    <label for="fName">First Name<span class="required">*</span></label>
+                    <input type="text" name="fName" id="fName" autocomplete="given-name" placeholder="First Name" required>
+                    <!-- custom input styles from https://moderncss.dev/custom-css-styles-for-form-inputs-and-textareas/ -->
+                    <label for="lName">Last Name<span class="required">*</span></label>
+                    <input type="text" name="lName" id="lName" autocomplete="family-name" placeholder="Last Name" required>
+                </div>
+                <div id="nums">
+                    <fieldset id="radio-grid">
+                        <legend>Contact Method<span class="required">*</span></legend>
+                        <!-- custom radio button styles from https://moderncss.dev/pure-css-custom-styled-radio-buttons/ -->
+                        <label for="prefEmail">
+                            <span class="radio-input">
+                                <input type="radio" name="contactPref" id="prefEmail" required checked>
+                                <span class="radio-control"></span>
+                            </span>
+                            <span class="radio-label">Email</span>
+                        </label>
+                        <label for="prefText">
+                            <span class="radio-input">
+                                <input type="radio" name="contactPref" id="prefText">
+                                <span class="radio-control"></span>
+                            </span>
+                            <span class="radio-label">Text</span>
+                        </label>
+                        <label for="prefPhone">
+                            <span class="radio-input">
+                                <input type="radio" name="contactPref" id="prefPhone">
+                                <span class="radio-control"></span>
+                            </span>
+                            <span class="radio-label">Phone</span>
+                        </label>
+                    </fieldset>
+                    <label for="email">Email Address<span class="required">*</span></label>
+                    <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" required>
+                    <label for="phone">Phone Number<span class="required">*</span></label>
+                    <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="Phone Number" required>
+                
 
-                <label for="message">Tell us about your experience here at CardFanatic</label>
-                <textarea name="message" form="messageForm" id="message" placeholder="Type message here..."></textarea>
-            </div>
-            <input type="submit" name="mySubmit" id="mySubmit" value="Submit">
-        </form>
-        
+                    <label for="message">Message<span class="required">*</span></label>
+                    <textarea name="message" form="messageForm" id="message" placeholder="Type message here..."></textarea>
+                    <input type="submit" name="mySubmit" id="mySubmit" value="Submit">
+                </div>
+            </form>
+            <section id="game">
+                <h3>Play & Win</h3>
+                <p>Enter a Number between 1 and 10 in the box<br>
+                    We will generate a random number. if your guess matches, you win!<br><br>
+                    If you win you will be entered into a sweepstakes to earn some free cards!</p>
+                <form id="gameForm">
+                    <label for="guess">Enter a Number Between 1 and 10:</label>
+                    <input type="guess" id="guess" name="guess"><br>
+                    <input type="submit" id="submitBtn" value="Take a Guess!">
+                </form>
+            </section>
+        </div>
     </main>
     <footer>
         <p>Copyright &copy; 2024 CardFanatic</p>
-        <a href="./contact.html" id="contact">Contact Us</a>
+        <div class="contact"><a href="./contact.html">Contact Us</a></div>
         <div class="socials">
             <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-twitter"></a>  
             <a href="#" class="fa fa-instagram"></a>
         </div>
         <img src="./images/logos/cardfanatic-logo3.png" alt="text logo for CardFanatic" id="footerLogo">
@@ -122,4 +135,5 @@
 </body>
 <!--loading scripts.js file-->
 <script src="scripts.js"></script>
+<script src="game.js"></script>
 </html>

@@ -136,6 +136,22 @@ table {
 }
 /* END OF CSS RESET */
 /* GLobal Styles*/
+/*Skip to content and main main nav for sr only*/
+#skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;   
+}
+
+#skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
 html,
 body {
     width: 100%;
@@ -200,11 +216,14 @@ h3 {
 
 .sliderBack {
     background-color: lightgrey;
-    width: 100%;   
+    width: 100%; 
+
 }                                                                      
 
 .slide {
     display: none;
+    text-align: center;
+
 }
 .slide img {
     width: 100%;
@@ -232,7 +251,7 @@ h3 {
     border-radius: 3px 0 0 3px;
 }
 .caption {
-    color: #f2f2f2;
+    color: #f9ec31;
     font-size: 25px;
     font-weight: bolder;
     padding: 8px 12px;
@@ -242,10 +261,11 @@ h3 {
     text-align: center;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.15);
+    border-bottom: 10px solid #2e3191;
 }
 /*keeps link from changinf color when clicked*/
 .caption a:visited {
-    color:#f2f2f2;
+    color: #f9ec31;
 }
 
 
@@ -274,12 +294,11 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem; 
+ 
 }
 .homeCards{
     display: block;
     width: 20%;
-    height: 15%;
     padding: .5rem;
 }
 .homeCards img {
@@ -322,6 +341,9 @@ h3 {
     width: 100%;
     height: 75px; 
 }
+.homeStore .homepgBtn {
+    margin-top: 1.5rem;
+}
 .homepgBtn:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     color: #f9ec31;
@@ -343,6 +365,9 @@ h3 {
         text-align: center;
         justify-content: center;
     }
+    .homeCont p {
+        text-align: left;
+    }
     .homeStore {
         padding: 0;
         justify-content: center;
@@ -353,7 +378,7 @@ h3 {
 
 /*Blog Page Styles */
 .blog {
-    width: 55%;
+    width: 45%;
     display: grid;
     grid-template-columns: 1fr;
     padding: 2rem;
@@ -374,6 +399,24 @@ h3 {
 }
 .blogDate {
     margin-top: 1rem;
+}
+/* Blog page responsive breakpoints for smaller screens */
+@media screen and (max-width: 900px) {
+    .blog{
+        width: 75%
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+  .blog {
+    margin: auto;
+    text-align: center;
+  } 
+  .blog p{
+    text-align: left;
+  }
+
 }
 /*End of blog Page styles*/
 /* Shop page Styles*/
@@ -404,8 +447,34 @@ h3 {
 .shopCards:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5)
 }
+
+/*styles for med to small screens */
+@media screen and (max-width: 1300px) {
+    .cardSection {
+        grid-template-columns: 1fr 1fr;
+    }
+    .shop {
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+.cardSection {
+        grid-template-columns: 1fr;
+    }
+.shop {
+    text-align: center;
+    justify-content: center;
+    grid-template-rows: auto;
+}
+
+}
 /*End of Shop Styles*/
 /* Contact page styles */
+#main-content-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 form {
     font-size: 1.15rem;
     font-weight: bold;
@@ -448,14 +517,13 @@ legend {
 }
 .radio-label {
     font-variant: normal;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 500;
-    margin-left: 1rem;
+    margin-left: .25rem;
 }
 input[type="radio"] {
     appearance: none;
     margin: 0;
-    font: inherit;
     color:#2e3191;
     width: 3em;
     height: 3em;
@@ -498,17 +566,40 @@ input[type="radio"]:checked::before {
 #message label {
     width: 90%;
 }
+#game {
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 2rem;  
+}
+#game p, #game
+h3 {
+    margin-left: 4rem;
+    font-weight: bold;
+}
+#submitBtn {
+    width: 65%;
+    padding: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 2rem;
+    color: #f2f2f2;
+    background: #2e3191;
+    cursor: pointer;
+}
 @media screen and (min-width:750px) {
-    form {
+    #main-content-contact {
             margin: auto;
-            width: 75%;
+            width: 45%;
         }
-    
+        #game p, #game h3 {
+        margin-left: 4rem;
+        }
+
         /*radio inputs*/
         #radio-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            width: 75%;
+            width: 100%;
             
         }
     
@@ -572,11 +663,10 @@ input[type="radio"]:checked::before {
         top: 5rem;
         flex-direction: column;
         background-color: #2e3191;
-        width: 100%;
+        width: 97.5%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
         z-index: 1;
     }
     .navMenu.active {
@@ -629,7 +719,7 @@ footer p {
     grid-column-start: 2;
     grid-row: 2;
 }
-#contact {
+.contact {
     grid-column-start: 1;
     grid-row: 1;
 }
@@ -639,9 +729,10 @@ footer p {
     grid-column-start: 2;
     grid-row: 1;
 }
-footer a:hover {
+footer .fa:hover, .contact a:hover {
     background-color: #f9ec31;
     color: black;
+    padding: 10px;
     border-radius: 10px;
 }
 footer a:visited {
@@ -661,7 +752,7 @@ footer a:visited {
         grid-column-start: 1;
         grid-row: 2;
     }
-    #contact {
+    .contact {
         grid-column: 2;
         grid-row: 1;
     }
@@ -675,7 +766,7 @@ footer a:visited {
         grid-template-columns: 1fr;
         grid-gap: 1.5rem;
     }
-    #contact {
+    .contact {
         grid-column: 1;
         grid-row: 3;
     }
